@@ -99,6 +99,22 @@ img.imgTwo:hover {
   font-size: 24px;
 }
 
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 997;
+  padding: 15px;
+}
+
+.backToTopImg {
+  filter: opacity(50%);
+}
+
+.backToTopImg:hover {
+  filter: opacity(100%);
+}
+
 .menuBar {
   z-index: 999;
   height: 48px;
@@ -389,6 +405,7 @@ img.imgTwo:hover {
   background-image: url("https://cdn.windowsreport.com/wp-content/uploads/2017/10/gmail-attachments-failed-loading.png");
   background-size: cover;
   background-position: center;
+  background-color: white;
 }
 
 .menuBlock8 {
@@ -426,6 +443,7 @@ img.imgTwo:hover {
   background-image: url("https://www.republiccapitalaccess.com/wp-content/uploads/2014/07/linkedin-icon.png");
   background-size: cover;
   background-position: center;
+  background-color: white;
 }
 
 .menuBlock9 {
@@ -501,22 +519,84 @@ img.imgTwo:hover {
   filter: opacity(0%);
 }
 
-.menuBlockText {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Bebas Neue";
-  font-size: 72px;
-  opacity: 1;
-  color: white;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+@media(min-width: 1081px){
+  .menuBlockText {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue";
+    font-size: 68px;
+    opacity: 1;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+@media(max-width: 1080px){
+  .menuBlockText {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue";
+    font-size: 48px;
+    opacity: 1;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+@media(max-width: 768px){
+  .menuBlockText {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue";
+    font-size: 36px;
+    opacity: 1;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+@media(max-width: 600px){
+  .menuBlockText {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue";
+    font-size: 28px;
+    opacity: 1;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
 }
 
 .sectionContainer {
@@ -526,21 +606,21 @@ img.imgTwo:hover {
   width: 100%;
 }
 
-.sectionZeroContainer {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 720px;
-  width: 100%;
-}
+  .sectionZeroContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+  }
 
-.sectionOneContainer {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 1300px;
-  width: 100%;
-}
+  .sectionOneContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    width: 100%;
+  }
 
 .sectionTwoContainer {
   position: relative;
@@ -590,76 +670,276 @@ img.imgTwo:hover {
   font-family: "Bebas Neue";
 }
 
-.sectionTextHeader {
-  color: black;
+@media(min-width: 1366px){
+  .sectionTextHeader {
+    color: black;
+    width: 100%;
+    font-size: 44px;
+  }
+}
+
+@media(max-width: 1365px){
+  .sectionTextHeader {
+    color: black;
+    width: 100%;
+    font-size: 38px;
+  }
+}
+
+@media(max-width: 1200px){
+  .sectionTextHeader {
+    color: black;
+    width: 100%;
+    font-size: 32px;
+  }
+}
+
+/* SECTION ZERO RESPONSIVE DESIGN START */
+/* SECTION ZERO RESPONSIVE DESIGN START */
+/* SECTION ZERO RESPONSIVE DESIGN START */
+.sectionZeroDivider {
+  position: relative;
   width: 100%;
-  font-size: 44px;
+  top: -48px;
+  display: flex;
+  flex-direction: row;
 }
 
-.sectionZeroPhoto {
-  position: absolute;
-  top: 120px;
+@media(min-width: 1366px){
+  .sectionZeroPhoto {
+  width: 550px;
+  background: url("jimmy-hwang.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 20px;
   filter: grayscale(100%);
+  margin-right: 6%;
+  }
+
+  .sectionZeroText {
+    top: -50px;
+    z-index: 100;
+    width: 600px;
+    font-size: 18px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    margin-right: 6%;
+  }
+
+  .sectionZeroText2 {
+    width: 200px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+  }
+
 }
 
-.sectionZeroText {
-  z-index: 100;
-  position: absolute;
-  top: 100px;
-  padding-left: 580px;
-  width: 530px;
-  font-size: 18px;
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
-  text-align: justify;
+@media(max-width: 1365px){
+  .sectionZeroPhoto {
+    width: 500px;
+    background: url("jimmy-hwang.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 20px;
+    filter: grayscale(100%);
+    margin-right: 5%;
+  }
+
+  .sectionZeroText {
+    top: -50px;
+    z-index: 100;
+    width: 500px;
+    font-size: 16px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    margin-right: 5%;
+  }
+
+  .sectionZeroText2 {
+    width: 200px;
+    font-size: 12px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+  }
+
 }
 
-.sectionZeroText2 {
-  position: absolute;
-  top: 100px;
-  padding-left: 1200px;
-  width: 200px;
-  font-size: 14px;
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
-  text-align: justify;
-}
+@media(max-width: 1200px){
+  .sectionZeroPhoto {
+    width: 450px;
+    background: url("jimmy-hwang.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 20px;
+    filter: grayscale(100%);
+    margin-right: 4%;
+  }
 
+  .sectionZeroText {
+    top: -50px;
+    z-index: 100;
+    width: 450px;
+    font-size: 15px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+    margin-right: 4%;
+  }
+
+  .sectionZeroText2 {
+    width: 200px;
+    font-size: 11px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: justify;
+  }
+}
+/* SECTION ZERO RESPONSIVE DESIGN END */
+/* SECTION ZERO RESPONSIVE DESIGN END */
+/* SECTION ZERO RESPONSIVE DESIGN END */
+
+/* SECTION ONE RESPONSIVE DESIGN START */
+/* SECTION ONE RESPONSIVE DESIGN START */
+/* SECTION ONE RESPONSIVE DESIGN START */
 .sectionOneVideoContainer {
   position: relative;
   top: -26px;
-  width: 1360px;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
-.sectionOneVideoContainer2 {
-  position: relative;
-  top: 60px;
-  width: 1360px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media(min-width: 1366px){
+  .sectionOneVideo1 {
+    width: 920px;
+    height: auto;
+    margin-right: 3%;
+  }
+
+  .sectionOneVideo2 {
+    width: 640px;
+    height: auto;
+    margin-right: 5%;
+  }
+
+  .sectionOneVideoContainer2 {
+    position: relative;
+    top: 60px;
+    width: 1360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sectionOneVideoPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .sectionOneVideoText {
+    margin-top: -18px;
+    width: 400px;
+    text-align: justify;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
 }
 
-.sectionOneVideoPart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 14px;
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
+@media(max-width: 1365px){
+  .sectionOneVideo1 {
+    width: 800px;
+    height: auto;
+    margin-right: 4%;
+  }
+
+  .sectionOneVideo2 {
+    width: 560px;
+    height: auto;
+    margin-right: 4%;
+  }
+
+  .sectionOneVideoContainer2 {
+    position: relative;
+    top: 60px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sectionOneVideoPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .sectionOneVideoText {
+    margin-top: -18px;
+    width: 300px;
+    text-align: justify;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
 }
 
-.sectionOneVideoText {
-  margin-top: -18px;
-  width: 400px;
-  text-align: justify;
-  font-size: 14px;
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
+@media(max-width: 1200px){
+  .sectionOneVideo1 {
+    width: 680px;
+    height: auto;
+    margin-right: 4%;
+  }
+
+  .sectionOneVideo2 {
+    width: 490px;
+    height: auto;
+    margin-right: 4%;
+  }
+
+  .sectionOneVideoContainer2 {
+    position: relative;
+    top: 60px;
+    width: 1040px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sectionOneVideoPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .sectionOneVideoText {
+    margin-top: -18px;
+    width: 300px;
+    text-align: justify;
+    font-size: 13px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
 }
+/* SECTION ONE RESPONSIVE DESIGN END */
+/* SECTION ONE RESPONSIVE DESIGN END */
+/* SECTION ONE RESPONSIVE DESIGN END */
 
 .sectionTwoPicContainer {
   top: -26px;

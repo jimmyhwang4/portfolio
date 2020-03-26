@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Portfolio</title>
+  <title>Jimmy Hwang</title>
 
   <!-- Load CSS and JS -->
   <link rel="stylesheet" href="style.css">
@@ -100,6 +100,14 @@
 </head>
 
 <body>
+
+  <div class="backToTop">
+    <a href="#sectionZero">
+      <div class="backToTopImg">
+        <img src="back-to-top.png" width="50" height="50"></img>
+      </div>
+    </a>
+  </div>
 
   <div class="menuBar">
     <div class="menuButton" id="btnMain"></div>
@@ -212,33 +220,34 @@
         <div class="sectionTextHeader">
           <p>Jeehun Jimmy Hwang</p>
         </div>
-        <div class="sectionZeroPhoto">
-          <img src="jimmy-hwang.jpg" width="500px" height="500px"></img>
-        </div>
-        <div class="sectionZeroText">
-          <h3>I am a developer, creative, musician, and dreamer.</h3>
-          <p>As a graduating senior of New York University's Tandon School of Engineering, I aspire to apply my skills that I have developed over the course of these years to inspire and leave a mark on people.</p>
-          <p>While I am concentrating on Front-End / Web Development, my passion for Graphic Design has allowed me to expand my perspective on visual design which has strengthened my overall development as a creative. Meanwhile, my passion for sound design (especially music production — a hobby that I've cherished since my beginnings), drives me to masterfully blend in the visual and audio elements of design which hopefully will be accomplished in my Senior Project.</p>
-          <p>I realize that there is still much room to grow and many more learnings to be done especially due to the fast-changing nature of technology, and this only brings me motivation to constantly make myself the best version of me every day.</p>
-          <p>My dream is to create a positive impact in this world through my work and to provide to my audience (you!) a token of my appreciation for spending their time wondering at my creations.</p>
-        </div>
-        <div class="sectionZeroText2">
-          <h3>Web</h3>
-          <p>HTML/CSS</p>
-          <p>JavaScript/jQuery</p>
-          <p>Responsive & Mobile Design</p>
-          <p>React</p>
-          <p>API</p>
-          <p>Git</p>
-          <h3>Graphic</h3>
-          <p>Photoshop</p>
-          <p>Indesign</p>
-          <p>Illustrator</p>
-          <h3>Audio</h3>
-          <p>FL Studio</p>
-          <h3>Other</h3>
-          <p>Processing/p5.js</p>
-          <p>Premiere</p>
+        <div class="sectionZeroDivider">
+          <div class="sectionZeroPhoto">
+          </div>
+          <div class="sectionZeroText">
+            <h3>I am a developer, creative, musician, and dreamer.</h3>
+            <p>As a graduating senior of New York University's Tandon School of Engineering, I aspire to apply my skills that I have developed over the course of these years to inspire and leave a mark on people.</p>
+            <p>While I am concentrating on Front-End / Web Development, my passion for Graphic Design has allowed me to expand my perspective on visual design which has strengthened my overall development as a creative. Meanwhile, my passion for sound design (especially music production — a hobby that I've cherished since my beginnings), drives me to masterfully blend in the visual and audio elements of design which hopefully will be accomplished in my Senior Project.</p>
+            <p>I realize that there is still much room to grow and many more learnings to be done especially due to the fast-changing nature of technology, and this only brings me motivation to constantly make myself the best version of me every day.</p>
+            <p>My dream is to create a positive impact in this world through my work and to provide to my audience (you!) a token of my appreciation for spending their time wondering at my creations.</p>
+          </div>
+          <div class="sectionZeroText2">
+            <h3>Web</h3>
+            <p>HTML/CSS</p>
+            <p>JavaScript/jQuery</p>
+            <p>Responsive Design</p>
+            <p>React</p>
+            <p>API</p>
+            <p>Git</p>
+            <h3>Graphic</h3>
+            <p>Photoshop</p>
+            <p>Indesign</p>
+            <p>Illustrator</p>
+            <h3>Audio</h3>
+            <p>FL Studio</p>
+            <h3>Other</h3>
+            <p>Processing/p5.js</p>
+            <p>Premiere</p>
+          </div>
         </div>
       </div>
     </div>
@@ -250,7 +259,7 @@
           <p>Web</p>
         </div>
         <div class="sectionOneVideoContainer">
-          <video src="weather-app.mp4" height="420px" width="auto" autoplay="true" loop="true" muted="true"></video>
+          <video class="sectionOneVideo1" src="weather-app.mp4" autoplay="true" loop="true" muted="true"></video>
           <div class="sectionOneVideoText">
             <h3>Weather App</h3>
             <p>Using realtime API provided by OpenWeather, I created an application that displayed various types of weather information for four cities that are special to me. Key features of this project include:</p>
@@ -259,13 +268,13 @@
             <p>♦ React</p>
             <p>♦ React Router (DOM)</p>
             <p>♦ Axios</p>
-            <p>♦ Image importing from @fortawesome/react-fontawesome</p>
+            <p>♦ Image importing</p>
           </div>
         </div>
         <div class="sectionOneVideoContainer2">
           <div class="sectionOneVideoPart">
             <a href="https://jimmyhwang4.github.io/web-dev-final-project/" target="_blank">
-              <video class="videoOne" onmouseout="this.play()" onmouseover="this.pause()" src="Old-Portfolio.mp4" height="300px" width="auto" autoplay="true" loop="true" muted="true"></video>
+              <video class="videoOne sectionOneVideo2" onmouseout="this.play()" onmouseover="this.pause()" src="Old-Portfolio.mp4" height="300px" width="auto" autoplay="true" loop="true" muted="true"></video>
             </a>
             <h3>Previous Portfolio</h3>
             <div class="sectionOneVideoText">
@@ -273,13 +282,13 @@
               <p>♦ One-Page Display</p>
               <p>♦ Interactive Menu and Buttons</p>
               <p>♦ Embedding outside sources</p>
-              <p>♦ Responsive & Mobile Design (3 variations)</p>
+              <p>♦ Responsive Design (3 variations)</p>
               <p>♦ HTML, CSS, JavaScript, and jQuery</p>
             </div>
           </div>
           <div class="sectionOneVideoPart">
             <a href="https://jimmyhwang4.github.io/fathers-legacy/home.html" target="_blank">
-              <video class="videoOne" onmouseout="this.play()" onmouseover="this.pause()" src="Fathers-Legacy.mp4" height="300px" width="auto" autoplay="true" loop="true" muted="true"></video>
+              <video class="videoOne sectionOneVideo2" onmouseout="this.play()" onmouseover="this.pause()" src="Fathers-Legacy.mp4" height="300px" width="auto" autoplay="true" loop="true" muted="true"></video>
             </a>
             <h3>Father's Legacy Music</h3>
             <div class="sectionOneVideoText">
