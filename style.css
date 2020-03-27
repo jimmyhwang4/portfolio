@@ -10,8 +10,8 @@ html {
   scroll-behavior: smooth;
   color: white;
   font-size: 0;
-  background-image: url("tile-pattern.jpg");
-  background-size: 1100px 500px;
+  background-image: url("bg4.jpg");
+  background-size: cover;
 }
 
 section {
@@ -606,11 +606,15 @@ img.imgTwo:hover {
   width: 100%;
 }
 
+/* SECTION CONTAINER RESPONSIVE DESIGN */
+/* SECTION CONTAINER RESPONSIVE DESIGN */
+/* SECTION CONTAINER RESPONSIVE DESIGN */
+@media(min-width: 1367px){
   .sectionZeroContainer {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 800px;
     width: 100%;
   }
 
@@ -618,25 +622,97 @@ img.imgTwo:hover {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 200vh;
+    height: 1400px;
     width: 100%;
   }
 
-.sectionTwoContainer {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 2600px;
-  width: 100%;
+  .sectionTwoContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 2700px;
+    width: 100%;
+  }
+
+  .sectionThreeContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 1360px;
+    width: 100%;
+  }
 }
 
-.sectionThreeContainer {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 1360px;
-  width: 100%;
+@media(max-width: 1366px){
+  .sectionZeroContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 768px;
+    width: 100%;
+  }
+
+  .sectionOneContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 1300px;
+    width: 100%;
+  }
+
+  .sectionTwoContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 2400px;
+    width: 100%;
+  }
+
+  .sectionThreeContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 1260px;
+    width: 100%;
+  }
 }
+
+@media(max-width: 1200px){
+  .sectionZeroContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 800px;
+    width: 100%;
+  }
+
+  .sectionOneContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 1200px;
+    width: 100%;
+  }
+
+  .sectionTwoContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 2120px;
+    width: 100%;
+  }
+
+  .sectionThreeContainer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 1180px;
+    width: 100%;
+  }
+}
+/* SECTION CONTAINER RESPONSIVE DESIGN */
+/* SECTION CONTAINER RESPONSIVE DESIGN */
+/* SECTION CONTAINER RESPONSIVE DESIGN */
 
 .sectionFourContainer {
   position: relative;
@@ -670,49 +746,54 @@ img.imgTwo:hover {
   font-family: "Bebas Neue";
 }
 
-@media(min-width: 1366px){
+@media(min-width: 1367px){
   .sectionTextHeader {
+    position: relative;
     color: black;
     width: 100%;
     font-size: 44px;
   }
 }
 
-@media(max-width: 1365px){
+@media(max-width: 1366px){
   .sectionTextHeader {
+    position: relative;
+    top: 10px;
     color: black;
     width: 100%;
-    font-size: 38px;
+    font-size: 40px;
   }
 }
 
 @media(max-width: 1200px){
   .sectionTextHeader {
+    position: relative;
+    top: 12px;
     color: black;
     width: 100%;
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
 /* SECTION ZERO RESPONSIVE DESIGN START */
 /* SECTION ZERO RESPONSIVE DESIGN START */
 /* SECTION ZERO RESPONSIVE DESIGN START */
-.sectionZeroDivider {
-  position: relative;
-  width: 100%;
-  top: -48px;
-  display: flex;
-  flex-direction: row;
-}
 
-@media(min-width: 1366px){
+@media(min-width: 1367px){
+  .sectionZeroDivider {
+    position: relative;
+    width: 100%;
+    top: -48px;
+    display: flex;
+    flex-direction: row;
+  }
+  
   .sectionZeroPhoto {
   width: 550px;
   background: url("jimmy-hwang.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0px 20px;
-  filter: grayscale(100%);
   margin-right: 6%;
   }
 
@@ -737,22 +818,29 @@ img.imgTwo:hover {
 
 }
 
-@media(max-width: 1365px){
+@media(max-width: 1366px){
+  .sectionZeroDivider {
+    position: relative;
+    width: 100%;
+    top: -32px;
+    display: flex;
+    flex-direction: row;
+  }
+
   .sectionZeroPhoto {
     width: 500px;
     background: url("jimmy-hwang.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0px 20px;
-    filter: grayscale(100%);
     margin-right: 5%;
   }
 
   .sectionZeroText {
     top: -50px;
     z-index: 100;
-    width: 500px;
-    font-size: 16px;
+    width: 550px;
+    font-size: 17px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: justify;
@@ -761,7 +849,7 @@ img.imgTwo:hover {
 
   .sectionZeroText2 {
     width: 200px;
-    font-size: 12px;
+    font-size: 13px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: justify;
@@ -770,20 +858,27 @@ img.imgTwo:hover {
 }
 
 @media(max-width: 1200px){
+  .sectionZeroDivider {
+    position: relative;
+    width: 100%;
+    top: -24px;
+    display: flex;
+    flex-direction: row;
+  }
+
   .sectionZeroPhoto {
-    width: 450px;
+    width: 475px;
     background: url("jimmy-hwang.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0px 20px;
-    filter: grayscale(100%);
     margin-right: 4%;
   }
 
   .sectionZeroText {
     top: -50px;
     z-index: 100;
-    width: 450px;
+    width: 400px;
     font-size: 15px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
@@ -793,7 +888,7 @@ img.imgTwo:hover {
 
   .sectionZeroText2 {
     width: 200px;
-    font-size: 11px;
+    font-size: 12.5px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: justify;
@@ -806,15 +901,15 @@ img.imgTwo:hover {
 /* SECTION ONE RESPONSIVE DESIGN START */
 /* SECTION ONE RESPONSIVE DESIGN START */
 /* SECTION ONE RESPONSIVE DESIGN START */
-.sectionOneVideoContainer {
-  position: relative;
-  top: -26px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-@media(min-width: 1366px){
+@media(min-width: 1367px){
+  .sectionOneVideoContainer {
+    position: relative;
+    top: -26px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
   .sectionOneVideo1 {
     width: 920px;
     height: auto;
@@ -840,23 +935,31 @@ img.imgTwo:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
   }
 
   .sectionOneVideoText {
     margin-top: -18px;
-    width: 400px;
+    width: 340px;
     text-align: justify;
-    font-size: 14px;
+    font-size: 16px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
   }
 
 }
 
-@media(max-width: 1365px){
+@media(max-width: 1366px){
+  .sectionOneVideoContainer {
+    position: relative;
+    top: -8px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
   .sectionOneVideo1 {
     width: 800px;
     height: auto;
@@ -882,7 +985,7 @@ img.imgTwo:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
+    font-size: 15px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
   }
@@ -891,13 +994,21 @@ img.imgTwo:hover {
     margin-top: -18px;
     width: 300px;
     text-align: justify;
-    font-size: 14px;
+    font-size: 15px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
   }
 }
 
 @media(max-width: 1200px){
+  .sectionOneVideoContainer {
+    position: relative;
+    top: -2px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
   .sectionOneVideo1 {
     width: 680px;
     height: auto;
@@ -923,7 +1034,7 @@ img.imgTwo:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 13px;
+    font-size: 14px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
   }
@@ -932,7 +1043,7 @@ img.imgTwo:hover {
     margin-top: -18px;
     width: 300px;
     text-align: justify;
-    font-size: 13px;
+    font-size: 14px;
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
   }
@@ -941,74 +1052,341 @@ img.imgTwo:hover {
 /* SECTION ONE RESPONSIVE DESIGN END */
 /* SECTION ONE RESPONSIVE DESIGN END */
 
-.sectionTwoPicContainer {
-  top: -26px;
-  z-index: 100;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1360px;
-  margin-bottom: 60px;
+/* SECTION TWO RESPONSIVE DESIGN START */
+/* SECTION TWO RESPONSIVE DESIGN START */
+/* SECTION TWO RESPONSIVE DESIGN START */
+@media(min-width: 1367px){
+  .sectionTwoPicContainer {
+    top: -26px;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1360px;
+    margin-bottom: 60px;
+  }
+
+  .picRow1 {
+    height: 420px;
+    width: auto;
+  }
+
+  .picRow2 {
+    height: 560px;
+    width: auto;
+  }
+
+  .picRow3 {
+    width: 640px;
+    height: auto;
+  }
 }
 
-.sectionThreeAudioContainer {
-  position: relative;
-  top: -26px;
-  width: 1360px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media(max-width: 1366px){
+  .sectionTwoPicContainer {
+    top: -12px;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    margin-bottom: 52px;
+  }
+
+  .picRow1 {
+    height: 380px;
+    width: auto;
+  }
+
+  .picRow2 {
+    height: 480px;
+    width: auto;
+  }
+
+  .picRow3 {
+    width: 570px;
+    height: auto;
+  }
 }
 
-.sectionThreeAudioPart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 14px;
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
+@media(max-width: 1200px){
+  .sectionTwoPicContainer {
+    top: -8px;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1040px;
+    margin-bottom: 44px;
+  }
+
+  .picRow1 {
+    height: 320px;
+    width: auto;
+  }
+
+  .picRow2 {
+    height: 420px;
+    width: auto;
+  }
+
+  .picRow3 {
+    width: 490px;
+    height: auto;
+  }
+}
+/* SECTION TWO RESPONSIVE DESIGN END */
+/* SECTION TWO RESPONSIVE DESIGN END */
+/* SECTION TWO RESPONSIVE DESIGN END */
+
+/* SECTION THREE RESPONSIVE DESIGN START */
+/* SECTION THREE RESPONSIVE DESIGN START */
+/* SECTION THREE RESPONSIVE DESIGN START */
+@media(min-width: 1367px){
+  .sectionThreeAudioContainer {
+    position: relative;
+    top: -26px;
+    width: 1360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sectionThreeAudioPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .sectionThreeAudioText {
+    margin-top: -18px;
+    margin-bottom: 60px;
+    width: 400px;
+    text-align: justify;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .vid3 {
+    width: 640px;
+    height: 360px;
+  }
 }
 
-.sectionThreeAudioText {
-  margin-top: -18px;
-  margin-bottom: 60px;
-  width: 400px;
-  text-align: justify;
-  font-size: 14px;
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
+@media(max-width: 1366px){
+  .sectionThreeAudioContainer {
+    position: relative;
+    top: -12px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sectionThreeAudioPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .sectionThreeAudioText {
+    margin-top: -18px;
+    margin-bottom: 60px;
+    width: 400px;
+    text-align: justify;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .vid3 {
+    width: 560px;
+    height: 320px;
+  }
 }
 
-.sectionFourText {
-  margin-top: 170px;
-  width: 1360px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 28px;
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
+@media(max-width: 1200px){
+  .sectionThreeAudioContainer {
+    position: relative;
+    top: -8px;
+    width: 1040px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sectionThreeAudioPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .sectionThreeAudioText {
+    margin-top: -18px;
+    margin-bottom: 60px;
+    width: 400px;
+    text-align: justify;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .vid3 {
+    width: 480px;
+    height: 265px;
+  }
+}
+/* SECTION THREE RESPONSIVE DESIGN END */
+/* SECTION THREE RESPONSIVE DESIGN END */
+/* SECTION THREE RESPONSIVE DESIGN END */
+
+/* SECTION FOUR RESPONSIVE DESIGN START */
+/* SECTION FOUR RESPONSIVE DESIGN START */
+/* SECTION FOUR RESPONSIVE DESIGN START */
+@media(min-width: 1367px){
+  .sectionFourText {
+    margin-top: 170px;
+    width: 1360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 28px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
 }
 
-.sectionFiveText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 0;
-  width: 1360px;
-  font-size: 14px;
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
+@media(max-width: 1366px){
+  .sectionFourText {
+    margin-top: 170px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 26px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
 }
 
-.sectionFiveCloser {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-  width: 1360px;
-  font-size: 14px;
-  color: black;
-  font-family: 'Roboto Condensed', sans-serif;
+@media(max-width: 1200px){
+  .sectionFourText {
+    margin-top: 170px;
+    width: 1040px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 24px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
 }
+/* SECTION FOUR RESPONSIVE DESIGN END */
+/* SECTION FOUR RESPONSIVE DESIGN END */
+/* SECTION FOUR RESPONSIVE DESIGN END */
+
+/* SECTION FIVE RESPONSIVE DESIGN START */
+/* SECTION FIVE RESPONSIVE DESIGN START */
+/* SECTION FIVE RESPONSIVE DESIGN START */
+@media(min-width: 1367px){
+  .sectionFiveText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    width: 1360px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .sectionFiveCloser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 1360px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .piano {
+    width: 1360px;
+    height: 500px;
+  }
+}
+
+@media(max-width: 1366px){
+  .sectionFiveText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    width: 1200px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .sectionFiveCloser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 1200px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .piano {
+    width: 1200px;
+    height: 500px;
+  }
+}
+
+@media(max-width: 1200px){
+  .sectionFiveText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    width: 1040px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .sectionFiveCloser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 1040px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .piano {
+    width: 1040px;
+    height: 500px;
+  }
+}
+/* SECTION FIVE RESPONSIVE DESIGN END */
+/* SECTION FIVE RESPONSIVE DESIGN END */
+/* SECTION FIVE RESPONSIVE DESIGN END */
