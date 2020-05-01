@@ -10,6 +10,6 @@ function typeWriter() {
   }
 
   if (i == txt.length) {
-    window.location.href = "main.html"
+    window.location.href = "portfolio.html"
   }
 }
